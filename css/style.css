@@ -1,0 +1,50 @@
+/* -----------------------
+    RESET
+----------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------
+    MAIN
+---------------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(circle, #da1d4b, #a31b3f, #6f1830, #3e121f, #120105);
+}
+#app {
+    max-width: 25rem;
+    width: 100%;
+    background-image: radial-gradient(circle, #e4f4a5, #ffe9ba, #ffe9e5, #fff4ff, #ffffff);
+    padding: 2.5rem 1.25rem;
+    border-radius: .9375rem;
+    box-shadow: 9px 9px 15px 0px #FBFFC7;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .9375rem;
+}
+.title span {
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+ul li {
+    margin: .3125rem 0 0 1.25rem;
+}
+.banner {
+    color: #da1d4b;
+    font-weight: bold;
+}
+.d-none {
+    display: none;
+}
+.rotate {
+    transform: rotateX(180deg);
+}

@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            listEmails: false,
             emails: []
         }
     },
@@ -13,6 +14,5 @@ createApp({
                 this.emails.push(response.data.response)
             })
         }
-        console.log(this.emails)
     }
 }).mount('#app')
