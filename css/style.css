@@ -38,12 +38,25 @@ body {
 .title span i {
     transition: 0.3s ease-out;
 }
+ul {
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
 ul li {
     margin: .3125rem 0 0 1.25rem;
 }
 .banner {
     color: #da1d4b;
     font-weight: bold;
+}
+.show {
+    height: 16.5rem;
+    opacity: 1;
+}
+.d-none {
+    display: none;
 }
 .rotate {
     transform: rotateZ(180deg);
