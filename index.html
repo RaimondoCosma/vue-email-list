@@ -16,7 +16,7 @@
             <h2>Lista Emails:</h2>
             <span @click="listEmails = !listEmails"><i :class="{ rotate: listEmails === true }" class="fa-solid fa-caret-down"></i></span>
         </div>
-        <ul v-if="listEmails === true" :class="{ 'd-none': listEmails === false }">
+        <ul v-if="listEmails === true">
             <li v-for="email in emails">{{ email }}</li>
         </ul>
         <div class="banner" v-else>Premi la freccia per mostrare le emails</div>
