@@ -14,12 +14,12 @@
     <div id="app">
         <div class="title">
             <h2>Lista Emails:</h2>
-            <span @click="listEmails = !listEmails"><i :class="{ rotate: listEmails === true }" class="fa-solid fa-caret-down"></i></span>
+            <span @click="isActive = !isActive"><i :class="{ rotate: isActive === true }" class="fa-solid fa-caret-down"></i></span>
         </div>
-        <ul :class="{show: listEmails === true}">
+        <ul :class="{show: isActive === true}">
             <li v-for="email in emails">{{ email }}</li>
         </ul>
-        <div class="banner" :class="{'d-none': listEmails === true}">Premi la freccia per mostrare le emails</div>
+        <div class="banner" :class="{'d-none': isActive === true}">Premi la freccia per mostrare le emails</div>
     </div>
 
     <script src="js/main.js"></script>

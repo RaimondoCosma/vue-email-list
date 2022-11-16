@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            listEmails: false,
+            isActive: false,
             emails: []
         }
     },
